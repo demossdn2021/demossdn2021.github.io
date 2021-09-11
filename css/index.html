@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Formal Foundations of Software Defined Networks (FoFoSDN)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
+		rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">FoFoSDN</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item active"><a href="#scope" class="nav-link">Scope</a></li>
+					<li class="nav-item active"><a href="#invitedSpeakers" class="nav-link">Motivational</a></li>
+					<li class="nav-item active"><a href="#contributedTalks" class="nav-link">Contributed</a></li>
+					<li class="nav-item active"><a href="#schedule" class="nav-link">Schedule</a></li>
+					<li class="nav-item active"><a href="#organizers" class="nav-link">Organizers</a></li>
+					<!-- <li class="nav-item active"><a href="https://nfvsdn2020.ieee-nfvsdn.org/registration/"
+							class="btn btn-primary" style="font-size: 15px;
+						padding-top: .9rem;
+						padding-bottom: .9rem;
+						padding-left: 20px;
+						padding-right: 20px;">Registration</a></li> -->
+					<li class="nav-item active"><a href="https://nfvsdn2021.ieee-nfvsdn.org/registration/"
+							class="nav-link" style="color: blue;">Registration</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<div class="hero-wrap" style="background-image: url('images/low_poly_banner_design_2203.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="col-lg-8 col-md-8 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+					<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Formal Foundations
+						of Software Defined Networks</h1>
+					<!-- <br><span>Workshop 2020</span></h1> -->
+					<p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span
+							class="icon-calendar mr-2"></span>9 November 2021 - Heraklion, Greece</p>
+					<h2 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Held in
+						conjunction with the <a href="https://nfvsdn2021.ieee-nfvsdn.org/">VII IEEE Conference on
+							Network
+							Function Virtualization and Software Defined
+							Networks</a>
+						<div class="row" style="padding-top: 15px;">
+							<div class="col-lg-2 col-md-3 col-sm-6">
+								<a class="btn btn-primary"
+									href="https://nfvsdn2021.ieee-nfvsdn.org/registration/">Register</a>
+							</div>
+							<!-- <div class="col-lg-10 col-md-9 col-sm-6" style="display: inline-block;">
+								<p style="color: red; font-size: 20px; display: inline; font-weight:bolder"><b>New!</b>
+								</p>
+								<p style="display: inline; font-size: 16px"><i>Prerecorded talks are now available!</i>
+								</p>
+							</div> -->
+
+						</div>
+						<!-- <div style="padding-top: 15px;">
+							<a class="btn btn-primary"
+								href="https://nfvsdn2020.ieee-nfvsdn.org/registration/">Register</a>
+								<p style="color: red; display: inline; font-size: 200%"><b>New!</b></p> We are happy to offer several participation grants to exceptional young scientists. For
+						application, please send your CVs and a short motivational letter to the organizers no later
+						than 1st of November
+						</div> -->
+						<!-- <h2 >
+						<p style="color: red; display: inline; font-size: 200%"><b>New!</b></p> We are happy to offer several participation grants to exceptional young scientists. For
+						application, please send your CVs and a short motivational letter to the organizers no later
+						than 1st of November
+					</h2> -->
+						<div id="timer" class="d-flex" style="margin-top: 30px;">
+							<div class="time" id="days"></div>
+							<div class="time pl-3" id="hours"></div>
+							<div class="time pl-3" id="minutes"></div>
+							<div class="time pl-3" id="seconds"></div>
+						</div>
+				</div>
+				<!-- <div class="col-lg-4 col-md-6 mt-0 mt-md-5">
+          	<form action="#" class="request-form ftco-animate">
+          		<h2>Join Conference</h2>
+	    				<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Name">
+	    				</div>
+	    				<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Email">
+	    				</div>
+    					<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Phone">
+	    				</div>
+	    				<div class="form-group">
+								<div class="checkbox">
+								   <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+								</div>
+							</div>
+	            <div class="form-group">
+	              <input type="submit" value="Join now" class="btn btn-primary py-3 px-4">
+	            </div>
+	    			</form>
+          </div> -->
+			</div>
+		</div>
+	</div>
+	<section class="ftco-section services-section"
+		style="background-image: url(images/heraklion-greece.jpeg); background-size: cover;">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+					<div class="media block-6 services d-block">
+						<div class="icon"><span class="flaticon-placeholder"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Venue</h3>
+							<p> Heraklion, Greece</p>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+					<div class="media block-6 services d-block">
+						<div class="icon"><span class="flaticon-world"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Transport</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+					<div class="media block-6 services d-block">
+						<div class="icon"><span class="flaticon-hotel"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Hotel</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+					<div class="media block-6 services d-block">
+						<div class="icon"><span class="flaticon-cooking"></span></div>
+						<div class="media-body">
+							<h3 class="heading mb-3">Restaurant</h3>
+							<p>A small river named Duden flows by their place and supplies.</p>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section ftco-no-pt" id="scope">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+					style="background-image: url(images/heraklion.jpeg);">
+				</div>
+				<div class="col-md-7 wrap-about py-md-5 ftco-animate">
+					<div class="heading-section mb-5 pt-5 pl-md-5">
+						<div class="pr-md-5 mr-md-5">
+							<h2 class="mb-4">Technical Focus and Motivation</h2>
+						</div>
+						<p>There are several contemporary examples of network failures, particularly in the domain of
+							SDNs, that led to substantial loss for businesses. Formal approaches have been proposed to
+							provide a foundational approach to addressing such issues through correct-by-design
+							construction, specification, and verification of SDN programs. Formal methods are promised
+							to address performance, reliability, and security issues of SDNs using the rigour provided
+							by their underlying mathematics. Hence, formal specification and verification of Network
+							Functions Virtualization (NFV) and Software Defined Networks (SDN) have been gaining
+							momentum in recent years. The focus of this workshop is on formal methods aimed to enable a
+							formal specification and verification of SDNs and NFVs. The topics of interest include, but
+							are not restricted to:</p>
+						<ul>
+							<li>foundations (including formal semantics of) programming languages,</li>
+							<li>formal specification languages,</li>
+							<li>formal verification techniques,</li>
+							<li>synthesis and correct-by-construction methods, and</li>
+							<li>testing, debugging, monitoring and other forms of non-exhaustive validation and
+								verification</li>
+						</ul>
+						<p><b><i>Note that this workshop has no proceedings.</i></b></p>
+						<p><b><i>Previous edition: <a href="https://fofosdn.github.io">https://fofosdn.github.io</a></i></b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section " id="invitedSpeakers">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-1">Motivational Speakers</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex">
+								<div class="img speaker-img" style="background-image: url(images/RajeevAlur.jpeg);">
+								</div>
+								<div class="text">
+									<h2><a href="https://www.cis.upenn.edu/~alur/" id="rajeev">Rajeev Alur</a>
+									</h2>
+									<p>Zisman Family Professor</p>
+									<p>Department of Computer and Information Science</p>
+									<p>University of Pennsylvania</p>
+									<!-- <p class="location"><b>Closing the Loop: Network Control in the Data
+											Plane</b></p>
+									<p class="location"><b>Abstract</b></p>
+									<p>The proliferation of communication services that we depend on every day makes
+										managing computer networks more important than ever. The increasing security,
+										availability, and performance demands of these services suggest that these
+										network-management problems must be solved in real time and inside the
+										network. In this new era, network management requires a fundamentally new
+										approach. Instead of performing offline analysis of network traces, future
+										networks need to make real-time, closed-loop decisions to block unwanted
+										traffic, to reroute traffic to avoid congestion, and more. This talk explores
+										how to bring together network measurement, analysis, and control, by leveraging
+										recent advances in programmable network devices and the P4 programming language
+										<a href="https://p4.org/">(www.p4.org)</a>. We present several example network
+										"apps" that detect and fix
+										performance and security problems, while still processing packets at line rate
+										in high-speed switches with limited memory. We also discuss our deployment
+										experience with network telemetry P4 applications using Barefoot Tofino switches
+										in the Princeton campus network.</p>
+									<p class="location"><b>Bio</b></p>
+									<p>Jennifer joined the Computer Science Department at Princeton University in
+										February 2005 after eight and a half years at <a
+											href="https://www.research.att.com/">AT&T Research</a>. Her research
+										focuses on Internet routing, network measurement, and network management, with
+										the larger goal of making data networks easier to design, understand, and
+										manage. Jennifer is co-author of the book<i> Web Protocols and Practice:
+											HTTP/1.1,
+											Networking Protocols, Caching, and Traffic Measurement (Addison-Wesley, May
+											2001)</i> and co-editor of<i> She's an Engineer? Princeton Alumnae Reflect
+											(Princeton
+											University, 1993, see recent talk about the book)</i>. Jennifer served as
+										the chair
+										of ACM SIGCOMM from 2003 to 2007, and has served on the ACM Council, the board
+										of the Computing Research Association, the advisory council of the Computer and
+										Information Science and Engineering directorate at NSF, and the Computing
+										Community Consortium. She received her BSE degree in electrical engineering from
+										Princeton University in 1991, and her MSE and PhD degrees in computer science
+										and electrical engineering from the University of Michigan in 1993 and 1996,
+										respectively. She was the winner of ACM's Grace Murray Hopper Award for
+										outstanding young computer professional of the year for 2004.</p> -->
+									<!-- <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
+												class="position">Founder of Wordpress</span></h3> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="nikolaj">
+								<div class="img speaker-img" style="background-image: url(images/nicolas.jpg);">
+								</div>
+								<div class="text">
+									<h2><a
+											href="https://www.microsoft.com/en-us/research/people/nbjorner/?from=http://research.microsoft.com/en-us/people/nbjorner/">Nikolaj
+											Bjørner</a></h2>
+									<p class="location"><b>SpecOps: Infusing specifications and formal tools in
+											Azure cloud operations</b></p>
+		
+									<p class="location"><b>Abstract</b></p>
+									<p>The talk outlines past and present interactions between Microsoft Research
+										and Azure Networking around formal methods tools for harnessing cloud
+										operations.
+										Many of the tools are presently combined in the Network Change Verification
+										System,
+										which gates data-center deployments. NCVS relies on underlying tools
+										CrystalBall,
+										the Network Logic Solver, Z3, Spock, and Zen for specification, emulation,
+										simulation,
+										and validation. We use NCVS as an exemplar of use of formal methods in Ops
+										scenarios,
+										that we call SpecOps.</p>
+									<p class="location"><b>Bio</b></p>
+									<p>Nikolaj Bjørner works around the state-of-the-art SMT constraint solver <a
+											href="https://github.com/z3prover/z3">Z3</a>. Z3
+										was developed with Leonardo de Moura, Lev Nachmanson and Christoph
+										Wintersteiger. Z3 is used for program verification, test case generation among
+										several applications. Z3 received the 2015 ACM SIGPLAN Software System award and
+										most influential tool paper in the first 20 years of TACAS. He and Leonardo de
+										Moura received the Herbrand Award at CADE 2019, <i>in recognition of numerous
+											and
+											important contributions to SMT solving, including its theory,
+											implementation,
+											and application to a wide range of academic and industrial needs.</i> He and
+										Karthick
+										Jayaraman created the SecGuru tool that is used to validate firewalls and
+										routing configurations for Microsoft Azure and George Varghese introduced me the
+										networking. Until 2006, he was in the Core File Systems group where he designed
+										and implemented the core of DFS-R which is included as part of Windows Server
+										2003 R2, Sharing Folders and Meetings Space. He also designed some of the
+										chunking utilities used in the remote differential compression protocol RDC.</p>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="paola">
+								<div class="img speaker-img" style="background-image: url(images/paola.jpg);">
+								</div>
+								<div class="text">
+									<h2><a href="https://staff.fnwi.uva.nl/p.grosso/">Paola Grosso</a></h2>
+									<p class="location"><b>Putting the networks users in charge:  how can P4
+											help?</b></p>
+									<p></p>
+									<p class="location"><b>Abstract</b></p>
+									<p>Enhanced telemetry is one of areas where P4 is expected to open up new
+										possibilities for increased insight in the way traffic flows, and to use
+										this knowledge to steer and manage traffic flows. Is P4 a tool to make the
+										Internet more transparent and increase trust from users? In this talk I will
+										present our recent P4 work in the areas of user control and user
+										verification of network paths. I will address the implications of P4 use
+										towards a trusted Internet.</p>
+									<p class="location"><b>Bio</b></p>
+									<p>Dr. Paola Grosso is associate professor at the University of Amsterdam where
+										she leads the Multiscale Networked Systems research group (<a
+											href="https://mns-research.nl">mns-research.nl</a>).
+										Her research interests lie in the creation of sustainable and secure
+										e-Infrastructures, relying on the provisioning and design of
+										programmable networks. She carries out this work supported by several
+										national research projects, such as Research on Networks, DL4LD, SecConNet
+										and a number of EU-funded international projects FED4FIRE+, GN4 and
+										ENVRIPLUS (H2020).  She contributes to the Dutch initiative 2STiC (<a
+											href="https://2stic.nl/">2stic.nl</a>)
+										building a nationwide P4 testbed for experimentation towards the future
+										internet.</p>
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+	</section>
+
+	<section class="ftco-section " id="contributedTalks">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-1">Contributed Talks</h2>
+				</div>
+			</div>
+			Updating ...
+			<!-- <div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="david">
+								<div class="img speaker-img" style="background-image: url(images/david-walker.jpg);">
+								</div>
+								<div class="text">
+									<h2><a href="https://www.cs.princeton.edu/~dpw/">David Walker</a></h2>
+									<p class="location"><b>NV: A Platform for Modelling and Verifying Network
+											Configurations</b></p>
+								
+									<p class="location"><b>Abstract</b></p>
+									<p>Router configuration languages like those provided by CISCO, Juniper and other
+										vendors are immensely complicated, with hundreds of commands and endless
+										documentation. Building tools for analyzing such configurations directly is
+										challenging and time consuming due to this complexity, especially when protocol
+										transformations or abstractions are needed to improve analysis performance. In
+										this talk, we will describe the design and implementation of NV, a functional
+										language with a simple, small, orthogonal and compositional set of constructs
+										that suffice to model the semantics and configuration of common network
+										protocols. We have built several analysis tools for NV, including both compiled
+										and interpreted mtBDD-based network simulators, an SMT-based verifier, and a
+										network compression tool. Several of these tools outperform prior
+										state-of-the-art tools in the same class thanks in part to the ease of applying
+										a series of optimizing transformations over our intermediate language. We also
+										have a translation tool that converts source-level configurations for a number
+										of common protocols and configuration features into NV automatically.
+										<br>
+										This is joint work with Nick Giannarakis, Devon Loehr and Ryan Beckett.
+									</p>
+									<p class="location"><b>Bio</b></p>
+									<p>David Walker is a Professor of Computer Science at Princeton University. He
+										received his B.Sc. from Queen's University, Canada in 1995 and his Ph.D. in
+										Computer Science from Cornell University in 2001. His research interests include
+										programming language theory, design and implementation of all kinds. Most
+										recently, he has focused on topics at the intersection of programming languages,
+										formal methods and networking. In doing so, he has contributed to the design of
+										several new languages for programming networks, including Frenetic, Pyretic,
+										NetKAT, P4, and Propane. He and his co-authors have also developed a suite of
+										tools for network configuration verification. Over the course of his career, he
+										and his co-authors have won a number of awards for research in both programming
+										languages and networking, including awards for work at POPL 1998, PLDI 2007,
+										NSDI 2013, SIGCOMM 2016 and PLDI 2020. In addition, he won an NSF Career award,
+										an Alfred Sloan Fellowship, and the ACM SIGPLAN Robin Milner Young Researcher
+										Award. He served as an associate editor for ACM TOPLAS from 2007-2015 and as the
+										Program Chair for POPL 2015. He helped found ACM SIGPLAN CARES.</p>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex">
+								<div class="img speaker-img" style="background-image: url(images/jnfoster.jpg);">
+								</div>
+								<div class="text">
+									<h2><a href="https://www.cs.cornell.edu/~jnfoster/" id="nate">Nate Foster</a></h2>
+									<p class="location"><b>Petr4: Formal Foundations for P4 Data Planes</b></p>
+									
+									<p class="location"><b>Abstract</b></p>
+									<p>P4 is a domain-specific language for specifying the behavior of packet-processing
+										systems. It is based on an elegant design with high-level abstractions, such as
+										parsers and match action pipelines, which can be compiled to efficient
+										implementations in hardware or software. Unfortunately, like many industrial
+										languages, P4 lacks a formal foundation. The P4 specification is a 160-page
+										document with a mixture of informal prose, graphical diagrams, and pseudocode.
+										The reference compiler is complex, running to over 40KLoC of C++ code. Clearly
+										neither of these artifacts is suitable for formal reasoning. This talk will
+										introduce a new framework called Petr4 (pronounced "Petra"), that puts P4 on a
+										solid foundation. Petr4 uses standard elements of the semantics engineering
+										toolkit, namely type systems and operational semantics, to build a compositional
+										semantics that assigns an unambiguous meaning to every P4 program. Petr4 is
+										implemented as an OCaml prototype that has been validated against a suite of
+										over 750 tests from the reference implementation. While developing Petr4, we
+										discovered dozens of bugs in the language specification and the reference
+										implementation, many of which have been fixed. Furthermore, we have used Petr4
+										to establish the soundness of P4’s type system, prove key properties such as
+										termination, and formalize a language extension.</p>
+									<p class="location"><b>Bio</b></p>
+									<p>Nate Foster is an Associate Professor of Computer Science at Cornell University,
+										a Principal Research Engineer at Barefoot Networks, an Intel Company. The goal
+										of his research is to develop languages and tools that make it easy for
+										programmers to build secure and reliable systems. His current work focuses on
+										the design and implementation of languages for programming software-defined
+										networks. In the past he has also worked on bidirectional languages (also known
+										as "lenses"), database query languages, data provenance, type systems,
+										mechanized proof, and formal semantics. He received a PhD in Computer Science
+										from the University of Pennsylvania, an MPhil in History and Philosophy of
+										Science from Cambridge University, and a BA in Computer Science from Williams
+										College. His awards include a Sloan Research Fellowship, an NSF CAREER Award,
+										the SIGCOMM Rising Star Award, and several paper and teaching awards.</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1 nav-link-wrap text-center text-md-right">
+				</div>
+				<div class="col-md-11 tab-wrap">
+
+					<div class="tab-content" id="v-pills-tabContent">
+
+						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+							aria-labelledby="day-1-tab">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="philip">
+								<div class="img speaker-img" style="background-image: url(images/godfrey.jpg);">
+								</div>
+								<div class="text">
+									<h2><a href="https://pbg.cs.illinois.edu/">Brighten Godfrey</a></h2>
+									
+									<p class="location"><b>Title: Software as a Network</b></p>
+									<p></p>
+									<p class="location"><b>Abstract</b></p>
+									<p>The networking community’s energy in recent years has focused on making networks
+										and network operations more software-driven. But meanwhile, the applications
+										running on network infrastructure are changing, too, and becoming more like a
+										network. This talk will explore how these trends may open new demands and
+										opportunities for networks, across all layers of the stack, with examples in
+										network performance and in verifying self-driving network infrastructure.</p>
+									<p class="location"><b>Bio</b></p>
+									<p>Brighten Godfrey is an Associate Professor in the Department of Computer Science
+										at the University of Illinois at Urbana-Champaign. He co-founded and served as
+										CTO of network verification pioneer Veriflow, through its 2019 acquisition by
+										VMware where he now serves as a Technical Director. He received his Ph.D. at UC
+										Berkeley in 2009, and his B.S. at Carnegie Mellon University in 2002. His
+										research interests lie in the design of networked systems and algorithms. He is
+										a winner of the ACM SIGCOMM Rising Star Award, the Sloan Research Fellowship,
+										the National Science Foundation CAREER Award, and multiple best paper awards.
+									</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+	</section>
+
+	<section class="ftco-section" id="schedule">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Schedule (time zone UTC+1)</h2>
+				</div>
+			</div>
+			Updating ...
+			<!-- <div class="ftco-schedule">
+				<div class="row">
+					<div class="col-md-3 nav-link-wrap text-center text-md-right">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill"
+								href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+								<span>9 November 2020</span></a>
+						</div>
+					</div>
+					<div class="col-md-9 tab-wrap">
+
+						<div class="tab-content" id="v-pills-tabContent">
+
+							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+								aria-labelledby="day-1-tab">
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#">Welcome</a></h2>
+										<span class="time">16:00 - 16:10 </span>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#paola">Putting the networks users in charge: how can P4 help?</a>
+										</h2>
+										<p>Recorded talk: <a
+												href="https://cloud.uni-konstanz.de/index.php/s/3dn7NLZjEFH8cDJ">Here</a>
+										</p>
+										<span class="time">16:10 - 16:40 </span>
+										<h3 class="speaker-name">&mdash; <a href="#paola">Paola Grosso</a> <span
+												class="position">University of Amsterdam</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#david">NV: A Platform for Modelling and Verifying Network
+												Configurations</a></h2>
+										<p>Recorded talk: <a
+												href="https://cloud.uni-konstanz.de/index.php/s/JXtt5JMtzoj7SpR">Here</a>
+										</p>
+										<span class="time">16:40 - 16:55 </span>
+										<h3 class="speaker-name">&mdash; <a href="#david">David Walker</a> <span
+												class="position">Princeton University</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#">Break</a></h2>
+										<span class="time">16:55 - 17:00 </span>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#jennifer">Closing the Loop: Network Control in the Data Plane</a>
+										</h2>
+										<p>Recorded talk: <a
+												href="https://cloud.uni-konstanz.de/index.php/s/bS8ze7r7mKFjXnx">Here</a>
+										</p>
+										<span class="time">17:00 - 17:30 </span>
+										<h3 class="speaker-name">&mdash; <a href="#jennifer">Jennifer Rexford</a> <span
+												class="position">Princeton University</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#nate">Petr4: Formal Foundations for P4 Data Planes</a></h2>
+										<p>Recorded talk: <a
+												href="https://cloud.uni-konstanz.de/index.php/s/RCyH6b6crWf26RH">Here</a>
+										</p>
+										<span class="time">17:30 - 17:45 </span>
+										<h3 class="speaker-name">&mdash; <a href="#nate">Nate Foster</a> <span
+												class="position">Cornell University</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#">Break</a></h2>
+										<span class="time">17:45 - 17:50 </span>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#philip">Software as a Network</a></h2>
+										<p>Recorded talk: <a
+												href="https://cloud.uni-konstanz.de/index.php/s/ysD293eXR7XsjNM">Here</a>
+										</p>
+										<span class="time">17:50 - 18:05 </span>
+										<h3 class="speaker-name">&mdash; <a href="#philip">Brighten Godfrey</a>
+											<span class="position">University of Illinois at Urbana-Champaign</span>
+										</h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="text1">
+										<h2><a href="#nikolaj">SpecOps: Infusing specifications and formal tools in
+												Azure cloud operations</a></h2>
+										<p>Recorded talk (Talk available only for download): <a
+												href="https://cloud.uni-konstanz.de/index.php/s/KfXE4foTWJRJ2mi">Here</a>
+										</p>
+										<span class="time">18:05 - 18:35 </span>
+										<h3 class="speaker-name">&mdash; <a href="#nikolaj">Nikolaj Bjørner</a> <span
+												class="position">Microsoft Research</span></h3>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+
+	<!-- <section class="ftco-section ftco-gallery ftco-no-pt">
+		<div class="container-fluid px-4">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Conference Gallery</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_1.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_2.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_3.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_4.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+
+
+	<section class="ftco-section" id="organizers">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-1">Organizers</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-md-6 d-flex align-items-stretch">
+					<div class="speaker ftco-animate d-flex align-items-stretch">
+						<div class="img" style="background-image: url(images/georgiana.png);">
+							<div class="text text-absolute">
+								<h3>Robert Bonner</h3>
+								<span class="position">Businessmen</span>
+								<ul class="ftco-social mt-3">
+									<li><a href="#"><span class="icon-twitter"></span></a></li>
+									<li><a href="#"><span class="icon-facebook"></span></a></li>
+									<li><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/georgiana.png);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://gcaltais2.wixsite.com/georgiana-caltais">Georgiana Caltais</a></h3>
+							<span class="position">University of Konstanz</span>
+							<div>
+								<a href="mailto:georgiana.caltais@uni-konstanz.de"><span
+										class="icon icon-envelope"></span>
+									<span style="padding-left: 6px;"
+										class="text">georgiana.caltais@uni-konstanz.de</span></a>
+							</div>
+							<!-- <ul>
+								<li>Profile: <a href="https://gcaltais2.wixsite.com/georgiana-caltais"><span
+											class="icon-user"></span></a></li>
+							</ul> -->
+							<!-- <p>Bio: Georgiana Caltais is an independent junior scientist at the University of Konstanz,
+								Chair for Software and Systems Engineering. Her research interests center around the
+								formal modelling, specification and analysis of computer systems, with emphasis on
+								automata, formal languages and system semantics. Currently, she is the principal
+								investigator of a DFG-funded research project targeting the formal specification and
+								verification of SDNs, with emphasis on counterfactual causal reasoning for liability in
+								SDNs.</p>
+							<ul>
+								<li>Tel: +49 7531 88 4762 / +41 78 405 61 94</li>
+								<li>E-mail: ​georgiana.caltais@uni-konstanz.de</li>
+								<li>Address: University of Konstanz, Chair for Software and Systems Engineering, P.O.
+									Box 67, D-78457, Konstanz, Germany</li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/hossein.jpeg);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://teias.institute/people/faculty/cs/hossein-hojjat/">Hossein Hojjat</a>
+							</h3>
+							<span class="position">Tehran Institute for Advanced Studies (TeIAS)</span>
+							<div>
+								<a href="mailto:h.hojjat@teias.institute"><span class="icon icon-envelope"></span>
+									<span style="padding-left: 6px;" class="text">h.hojjat@teias.institute</span></a>
+							</div>
+							<!-- <ul>
+								<li>Profile: <a href="https://teias.institute/people/faculty/cs/hossein-hojjat/"><span
+											class="icon-user"></span></a></li>
+							</ul> -->
+							<!-- <p>Bio: Hossein Hojjat is an assistant professor at the Tehran Institute for Advanced
+								Studies (TeIAS) and the Rochester Institute of Technology (RIT). He has held visiting
+								assistant professorship at Cornell University. He earned a PhD in Computer Science from
+								EPFL. He is on the editorial board of Information Processing Letters and also co-chairs
+								the international conference on Fundamentals of Software Engineering (FSEN). His
+								research interests center on software defined networking, program synthesis and
+								verification.</p>
+							<ul>
+								<li>Tel: +98 2189174077</li>
+								<li>E-mail: ​hojjat@ut.ac.ir</li>
+								<li>Address: Tehran Institute for Advanced Studies (TeIAS), 17 East Daneshvar St., North
+									Shirazi St., Mollasadra Blvd., Tehran, Iran.</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/mohammad.jpg);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://www.nms.kcl.ac.uk/mohammad.mousavi/">Mohammad Mousavi</a></h3>
+							<span class="position">King's College London</span>
+							<div>
+								<a href="mailto:mohammad.mousavi@kcl.ac.uk"><span class="icon icon-envelope"></span>
+									<span class="text" style="padding-left: 6px;">mohammad.mousavi@kcl.ac.uk</span></a>
+							</div>
+
+							<!-- <ul>
+								<li>Profile: <a href="https://www.cs.le.ac.uk/people/mm789/"><span
+											class="icon-user"></span></a></li>
+							</ul> -->
+							<!-- <p>Bio: Mohammad Mousavi holds the chair of Data-Driven Software Engineering at the
+								Department of Informatics, University of Leicester. Mohammad's main research area is in
+								model-based testing, particularly applied to software product lines, cyber-physical
+								systems and software defined networks. He is also interested in formal semantics and
+								formal verification (in particular model-checking) as the foundations of conformance
+								testing for such applications.</p>
+							<ul>
+								<li>Tel: +44 7950554321</li>
+								<li>E-mail: ​mm789@le.ac.uk</li>
+								<li>Address: University of Leicester, School of Informatics, University Road, LE1 7RH,
+									Leicester, UK</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="ftco-section testimony-section" id="participants">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Participants</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+								<div class="text pt-4">
+									<p class="name">Roger Scott</p>
+									<span class="position">Marketing Manager</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">Interface Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">UI Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">Web Developer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+									<p class="name">Roger Scott</p>
+									<span class="position">System Analyst</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<!-- 			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">FoFoSDN</h2>
+						<p>Formal Foundations of Software Defined Networks (FoFoSDN)</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-5">
+						<h2 class="ftco-heading-2">Useful Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#invitedSpeakers" class="py-2 d-block">Speakers</a></li>
+							<li><a href="#schedule" class="py-2 d-block">Shedule</a></li>
+							<li><a href="#organizers" class="py-2 d-block">Organizers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Privacy</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">About Us</a></li>
+							<li><a href="#" class="py-2 d-block">Contact Us</a></li>
+							<li><a href="#" class="py-2 d-block">Services</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">University of Konstanz,
+										Chair for Software and Systems Engineering, P.O. Box 67, D-78457, Konstanz,
+										Germany</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 7531 88 4762
+											/ +41 78 405 61 94</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">​georgiana.caltais@uni-konstanz.de</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p style="text-align:center !important;">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> FoFoSDN - All rights reserved |
+						Material is reserved from <a href="https://colorlib.com" target="_blank">Colorlib</a> and <a
+							href="https://www.vecteezy.com/free-vector/abstract">Vecteezy </a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
